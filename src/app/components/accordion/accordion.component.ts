@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-accordion',
+  templateUrl: './accordion.component.html',
+  styleUrls: ['./accordion.component.scss']
+})
+export class AccordionComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void { }
+
+  toggle(element: any) {
+    console.log(element);
+    element.srcElement.parentNode.classList.toggle('active');
+  }
+
+}
