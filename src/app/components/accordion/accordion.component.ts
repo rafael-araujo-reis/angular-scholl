@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-accordion',
@@ -7,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccordionComponent implements OnInit {
 
+  @Input() title: string | undefined;
+  @Input() content: string | undefined;
+
   constructor() { }
 
   ngOnInit(): void { }
 
   toggle(element: any) {
-    console.log(element);
     element.srcElement.parentNode.classList.toggle('active');
   }
 
