@@ -4,13 +4,14 @@
 * Colors application
  ------------------------------------------------ */
 
-$color-primary: $color-blue-300;
+$color-primary: $color-orange-200;
+$color-secondary: $color-blue-200;
 
 $color-border: $color-gray-200;
 $color-box-shadow: $color-gray-200;
 
 $color-title: $color-white-100;
-$color-text: $color-black-700;
+$color-text: $color-gray-600;
 
 $color-background: $color-white-100;
 
@@ -38,7 +39,7 @@ html {
 
 @media (max-width: 1080px) {
   html {
-    font-size: 70%;
+    font-size: 56%;
   }
 }
 
@@ -86,3 +87,11 @@ ul {
 img {
   max-width: 100%;
 }
+
+.container {
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
