@@ -1,6 +1,9 @@
 <div class="accordion">
   <div class="contentBox" (click)="toggle($event)">
-    <div class="title">{{ title }}</div>
+    <div class="title">
+      <p>{{ title }}</p>
+      <mat-icon>expand_more</mat-icon>
+    </div>
     <div class="content">
       <p>{{ content }}</p>
     </div>

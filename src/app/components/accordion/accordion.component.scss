@@ -10,16 +10,30 @@
       background-color: $color-primary;
       cursor: pointer;
       color: $color-title;
-      font-size: 2rem;
+      font-size: 1.8rem;
 
-      &::after {
-        content: "+";
-        position: absolute;
-        right: 2rem;
-        font-size: 3rem;
-        top: 50%;
-        transform: translateY(-50%);
+      display: flex;
+
+      p {
+        margin-right: 3rem;
       }
+
+      mat-icon {
+        margin-block: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 0;
+        right: 2rem;
+
+        transition: all 0.5s;
+        font-size: 3rem;
+      }
+
+      border-radius: 1rem;
     }
 
     .content {
@@ -39,8 +53,10 @@
 
     &.active {
       .title {
-        &::after {
-          content: "-";
+        border-radius: 1rem 1rem 0 0;
+
+        mat-icon {
+          transform: rotateX(180deg);
         }
       }
 
@@ -48,13 +64,9 @@
         height: 100%;
         padding: 2rem;
         border: 0.1rem solid $color-border;
+        border-radius: 0 0 1rem 1rem;
         opacity: 1;
       }
-    }
-
-    &:hover {
-      box-shadow: 0.3rem 0.3rem 0.5rem $color-box-shadow;
-      border-radius: 0 0 0.5rem 0.5rem;
     }
   }
 }
