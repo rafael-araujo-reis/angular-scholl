@@ -1,0 +1,24 @@
+@import "src/styles.scss";
+
+h2 {
+  font-size: 2.4rem;
+  color: $color-primary;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  color: $color-text;
+}
+
+a {
+  font-weight: 600;
+  color: $color-secondary;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.subtitle {
+  margin-bottom: 1.6rem;
+}
