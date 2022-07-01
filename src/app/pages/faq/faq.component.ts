@@ -24,6 +24,11 @@ export class FaqComponent implements OnInit {
       ask: 'Como faço para pedir a transferência da minha linha fixa?',
       response: 'Para pedir a transferência de linha você precisa ver a disponibilidade do lugar que quer. Para consultar, entre em contato com a nossa Central de Relacionamento no número 10315 com os dados do novo endereço'
     },
+    {
+      ask: 'Como faço para pedir a transferência da minha linha fixa?',
+      response: `Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é.Quem num gosta di mim que vai caçá sua turmis!Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.
+      Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é.Quem num gosta di mim que vai caçá sua turmis!Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.`
+    },
   ];
 
   constructor() {

@@ -1,7 +1,8 @@
 <section>
-  <h2>Perguntas frequentes</h2>
-  <p class="subtitle">Agora aqui no Elegance, você pode consultar as dúvidas mais frequentes e resolver seu problema de
-    forma simples e rápida</p>
+  <h2>Dúvidas frequentes</h2>
+  <p class="subtitle">Agora aqui no Elegance, você pode consultar as dúvidas mais frequentes e
+    <span> resolver seu problema de forma simples e rápida </span>
+  </p>
 
   <div *ngFor="let ask of faq">
     <app-accordion [title]="ask.ask" [content]="ask.response"></app-accordion>

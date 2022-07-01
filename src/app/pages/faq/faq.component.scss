@@ -1,9 +1,24 @@
 @import "src/styles.scss";
 
+section {
+  &::before {
+    content: ".";
+    position: absolute;
+    left: 0;
+    background-color: $color-primary;
+    width: 100vw;
+    height: 19.4rem;
+    transform: translateY(-20%);
+
+    z-index: -1;
+  }
+}
 h2 {
-  font-size: 2.4rem;
-  color: $color-primary;
-  margin-bottom: 0.8rem;
+  font-size: 3.6rem;
+  color: $color-secondary;
+  margin-top: 5rem;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
 }
 
 p {
@@ -12,7 +27,7 @@ p {
 
 a {
   font-weight: 600;
-  color: $color-secondary;
+  color: $color-primary;
 
   &:hover {
     text-decoration: underline;
@@ -20,5 +35,15 @@ a {
 }
 
 .subtitle {
-  margin-bottom: 1.6rem;
+  margin-bottom: 5.6rem;
+  color: $color-title;
+  font-size: 2rem;
+}
+
+@media (min-width: 720px) {
+  .subtitle {
+    span {
+      display: block;
+    }
+  }
 }
