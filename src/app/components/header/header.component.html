@@ -1,0 +1,15 @@
+<header>
+
+  <div class="container">
+
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <li class="item" *ngFor="let item of menuItems">{{ item.description }}</li>
+      </ul>
+    </nav>
+
+    <app-button [description]="'Acessar conta'"></app-button>
+  </div>
+
+</header>
