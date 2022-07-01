@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MaterialModule } from './shared/material.module';
 @NgModule({
   declarations: [
@@ -16,10 +17,12 @@ import { MaterialModule } from './shared/material.module';
     AppRoutingModule,
     PagesModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ComponentsModule
   ],
   exports: [
-    MaterialModule
+    MaterialModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
