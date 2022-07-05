@@ -3,9 +3,12 @@
   <div class="container">
 
     <nav>
-      <div class="logo"></div>
+      <a href="/" class="logo">
+      </a>
       <ul class="menu">
-        <li class="item" *ngFor="let item of menuItems">{{ item.description }}</li>
+        <a href="{{item.url}}" class="item" *ngFor="let item of menuItems">
+          <li>{{ item.description }}</li>
+        </a>
       </ul>
     </nav>
 
