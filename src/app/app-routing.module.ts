@@ -7,19 +7,23 @@ import { HomeComponent } from './pages/home/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { title: 'Elegance' }
   },
   {
     path: 'products',
-    component: ProductComponent
+    component: ProductComponent,
+    data: { title: 'Produtos' }
   },
   {
     path: 'faq',
-    component: FaqComponent
+    component: FaqComponent,
+    data: { title: 'Dúvidas frequentes' }
   }
 ];
 
@@ -27,4 +31,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
